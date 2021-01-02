@@ -5,6 +5,11 @@ If the destination square is occupied by an enemy pawn, we take it if the the su
 
 Game situation at the start and valid movements of each pawns. The number indicates the value of a pawn. The black dot indicates pawns belonging to Black. The other pawns belong to White. White starts the game.
 
+<p align="center">
+   <img src="https://github.com/AmineAgrane/wargame_alpha_beta_pruning/blob/main/doc/setting_wargame.png" height="300" align="center"/>
+</p>
+
+
 In order to play a game by human, commands must be given inside the terminal. Some examples of the command syntax  :
 - **D1D2** (go from the **D1** square to the **D2** square)
 - **B7B6** (go from the **B7** square to the **B6** square)
@@ -20,9 +25,16 @@ The structure used in this algorithm is a tree: The root represents the initial 
 Alpha-beta pruning is an optimization technique for the minimax algorithm, it uses a confidence interval [alpha, beta] to determine whether to cut the branches of the game tree that do not need to be searched for because there is already a better
 available shot. This algorithm performs the same work and gives the same results as the minmax algorithm, while avoiding visiting all the nodes of the tree, which results in a consequent gain in terms of performance and computing time.  This allows us to perform a search much faster and to go further in the game tree.
 
+<p align="center">
+   <img src="https://github.com/AmineAgrane/wargame_alpha_beta_pruning/blob/main/doc/minimax.png" height="400" align="center"/>
+</p>
+
 ##### Experimental analysis : 
 For each of the 2 algorithms, and for each of the possible depths (from 1 to 3), we play 5 games of 15 moves. At the end of the 15th move, we take the total number of explored nodes during the game.
 
+<p align="center">
+   <img src="https://github.com/AmineAgrane/wargame_alpha_beta_pruning/blob/main/doc/analyse_wargame.png" height="400" align="center"/>
+</p>
 
 # Heuristic Function :
 The heuristic function is a function that, for a given player and a given board, assigns an integer value. This value is an indicator of the "favorable situation" for the given player. If a board is assigned a large value, it increases the player's chances of winning, a small value when it minimizes the chances of winning, and a large value when it minimizes the chances of losing. the player's chances of victory.
