@@ -1,3 +1,7 @@
+<p align="center">
+   <img src="https://github.com/AmineAgrane/wargame_alpha_beta_pruning/blob/main/doc/wargame.gif" height="300" align="center"/>
+</p>
+
 # Setting of the game
 The goal of this project is to create a simplified version of "wargame" to be played by 2 players. Each turn, each player may move only one of its pawn by one square in all 8 directions. It is forbidden to move to a square occupied by one of its own pawns or to move out of the playground.
 
